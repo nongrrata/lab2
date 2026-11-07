@@ -359,3 +359,230 @@
 15:26:26 | base | Удален наблюдатель для базы
 15:26:26 | base | База удалена
 15:26:26 | map.terrain_map | Карта отрисована
+19:41:31 | __main__ | Запуск...
+19:41:31 | game_controller | Карта инициализирована
+19:41:31 | base | Добавлен наблюдатель для базы
+19:41:31 | base | Оповещение наблюдателей базой
+19:41:31 | game_controller | База на клетке (1, 1) создана
+19:41:31 | map.terrain_map | Карта отрисована
+19:41:32 | terrains.terrain_proxy | is_passable для swordsman -> True
+19:41:32 | units.unit_type_info | Получен UnitTypeInfo для infantry
+19:41:32 | units.unit | Добавлен наблюдатель для юнита (id: 0)
+19:41:32 | base | Создан swordsman на клетке (1, 3)
+19:41:32 | units.unit | Добавлен наблюдатель для юнита (id: 0)
+19:41:32 | units.unit | Оповещение наблюдателей юнитом (id: 0)
+19:41:32 | units.unit | Оповещение наблюдателей юнитом (id: 0)
+19:41:32 | terrains.terrain_proxy | is_passable для light_archer -> True
+19:41:32 | units.unit_type_info | Получен UnitTypeInfo для archer
+19:41:32 | units.unit | Добавлен наблюдатель для юнита (id: 1)
+19:41:32 | base | Создан light_archer на клетке (3, 1)
+19:41:32 | units.unit | Добавлен наблюдатель для юнита (id: 1)
+19:41:32 | units.unit | Оповещение наблюдателей юнитом (id: 1)
+19:41:32 | units.unit | Оповещение наблюдателей юнитом (id: 1)
+19:41:32 | map.terrain_map | Карта отрисована
+19:41:33 | terrains.terrain_proxy | is_passable для swordsman -> True
+19:41:33 | terrains.terrain_proxy | speed_modifier для infantry -> 1.000000
+19:41:33 | game_controller | Юнит (id: 0) использовал A
+19:41:33 | game_controller | Юнит (id: 0) переместился с (1, 3) на (2, 4)
+19:41:33 | terrains.terrain_proxy | is_passable для light_archer -> True
+19:41:33 | terrains.terrain_proxy | speed_modifier для archer -> 1.000000
+19:41:33 | game_controller | Юнит (id: 1) переместился с (3, 1) на (3, 2)
+19:41:33 | map.terrain_map | Карта отрисована
+19:41:34 | map.cell | Установлен A на клетку (3, 3)
+19:41:34 | map.cell | Установлен T на клетку (4, 2)
+19:41:34 | map.terrain_map | Карта отрисована
+19:41:35 | terrains.terrain_proxy | is_passable для swordsman -> True
+19:41:35 | terrains.terrain_proxy | speed_modifier для infantry -> 0.500000
+19:41:35 | game_controller | Юнит (id: 0) использовал A
+19:41:35 | game_controller | Юнит (id: 0) переместился с (2, 4) на (3, 3)
+19:41:35 | terrains.terrain_proxy | is_passable для light_archer -> True
+19:41:35 | terrains.terrain_proxy | speed_modifier для archer -> 1.000000
+19:41:35 | units.unit | Оповещение наблюдателей юнитом (id: 1)
+19:41:35 | base | Юнит (id: 1) получил 5 урона
+19:41:35 | units.unit | Оповещение наблюдателей юнитом (id: 1)
+19:41:35 | game_controller | Юнит (id: 1) использовал T
+19:41:35 | game_controller | Юнит (id: 1) переместился с (3, 2) на (4, 2)
+19:41:35 | map.terrain_map | Карта отрисована
+19:41:36 | units.unit | Оповещение наблюдателей юнитом (id: 0)
+19:41:36 | units.unit | Удален наблюдатель для юнита (id: 0)
+19:41:36 | base | База удалила юнита (id: 0)
+19:41:36 | base | Юнит (id: 0) погиб (урон: 200)
+19:41:36 | units.unit | Оповещение наблюдателей юнитом (id: 0)
+19:41:36 | map.terrain_map | Карта отрисована
+19:41:37 | base | База получила смертельный урон: 500
+19:41:37 | base | Оповещение наблюдателей базой
+19:41:37 | units.unit | Удален наблюдатель для юнита (id: 1)
+19:41:37 | base | Удален наблюдатель для базы
+19:41:37 | base | База удалена
+19:41:37 | map.terrain_map | Карта отрисована
+19:42:17 | __main__ | Запуск...
+19:42:17 | game_controller | Карта инициализирована
+19:42:17 | base | Добавлен наблюдатель для базы
+19:42:17 | base | Оповещение наблюдателей базой
+19:42:17 | game_controller | База на клетке (1, 1) создана
+19:42:17 | map.terrain_map | Карта отрисована
+19:42:18 | terrains.terrain_proxy | is_passable для swordsman -> True
+19:42:18 | units.unit_type_info | Получен UnitTypeInfo для infantry
+19:42:18 | units.unit | Добавлен наблюдатель для юнита (id: 0)
+19:42:18 | base | Создан swordsman на клетке (1, 3)
+19:42:18 | units.unit | Добавлен наблюдатель для юнита (id: 0)
+19:42:18 | units.unit | Оповещение наблюдателей юнитом (id: 0)
+19:42:18 | units.unit | Оповещение наблюдателей юнитом (id: 0)
+19:42:18 | game_controller | Юнит (id: 0) использовал A
+19:42:18 | terrains.terrain_proxy | is_passable для light_archer -> True
+19:42:18 | units.unit_type_info | Получен UnitTypeInfo для archer
+19:42:18 | units.unit | Добавлен наблюдатель для юнита (id: 1)
+19:42:18 | base | Создан light_archer на клетке (3, 1)
+19:42:18 | units.unit | Добавлен наблюдатель для юнита (id: 1)
+19:42:18 | units.unit | Оповещение наблюдателей юнитом (id: 1)
+19:42:18 | units.unit | Оповещение наблюдателей юнитом (id: 1)
+19:42:18 | map.terrain_map | Карта отрисована
+19:42:19 | terrains.terrain_proxy | is_passable для swordsman -> True
+19:42:19 | terrains.terrain_proxy | speed_modifier для infantry -> 0.500000
+19:42:19 | units.unit | Оповещение наблюдателей юнитом (id: 0)
+19:42:19 | base | Юнит (id: 0) получил 0 урона
+19:42:19 | units.unit | Оповещение наблюдателей юнитом (id: 0)
+19:42:19 | game_controller | Юнит (id: 0) использовал T
+19:42:19 | game_controller | Юнит (id: 0) переместился с (1, 3) на (2, 4)
+19:42:19 | terrains.terrain_proxy | is_passable для light_archer -> True
+19:42:19 | terrains.terrain_proxy | speed_modifier для archer -> 1.000000
+19:42:19 | game_controller | Юнит (id: 1) использовал A
+19:42:19 | game_controller | Юнит (id: 1) переместился с (3, 1) на (3, 2)
+19:42:19 | map.terrain_map | Карта отрисована
+19:42:20 | map.cell | Установлен A на клетку (3, 3)
+19:42:20 | map.cell | Установлен T на клетку (4, 2)
+19:42:20 | map.terrain_map | Карта отрисована
+19:42:21 | terrains.terrain_proxy | is_passable для swordsman -> True
+19:42:21 | terrains.terrain_proxy | speed_modifier для infantry -> 0.500000
+19:42:21 | game_controller | Юнит (id: 0) использовал A
+19:42:21 | game_controller | Юнит (id: 0) переместился с (2, 4) на (3, 3)
+19:42:21 | terrains.terrain_proxy | is_passable для light_archer -> True
+19:42:21 | terrains.terrain_proxy | speed_modifier для archer -> 1.000000
+19:42:21 | units.unit | Оповещение наблюдателей юнитом (id: 1)
+19:42:21 | base | Юнит (id: 1) получил 5 урона
+19:42:21 | units.unit | Оповещение наблюдателей юнитом (id: 1)
+19:42:21 | game_controller | Юнит (id: 1) использовал T
+19:42:21 | game_controller | Юнит (id: 1) переместился с (3, 2) на (4, 2)
+19:42:21 | map.terrain_map | Карта отрисована
+19:42:22 | units.unit | Оповещение наблюдателей юнитом (id: 0)
+19:42:22 | units.unit | Удален наблюдатель для юнита (id: 0)
+19:42:22 | base | База удалила юнита (id: 0)
+19:42:22 | base | Юнит (id: 0) погиб (урон: 200)
+19:42:22 | units.unit | Оповещение наблюдателей юнитом (id: 0)
+19:42:22 | map.terrain_map | Карта отрисована
+19:42:23 | base | База получила смертельный урон: 500
+19:42:23 | base | Оповещение наблюдателей базой
+19:42:23 | units.unit | Удален наблюдатель для юнита (id: 1)
+19:42:23 | base | Удален наблюдатель для базы
+19:42:23 | base | База удалена
+19:42:23 | map.terrain_map | Карта отрисована
+19:42:32 | __main__ | Запуск...
+19:42:32 | game_controller | Карта инициализирована
+19:42:32 | base | Добавлен наблюдатель для базы
+19:42:32 | base | Оповещение наблюдателей базой
+19:42:32 | game_controller | База на клетке (1, 1) создана
+19:42:32 | map.terrain_map | Карта отрисована
+19:42:33 | terrains.terrain_proxy | is_passable для swordsman -> True
+19:42:33 | units.unit_type_info | Получен UnitTypeInfo для infantry
+19:42:33 | units.unit | Добавлен наблюдатель для юнита (id: 0)
+19:42:33 | base | Создан swordsman на клетке (1, 3)
+19:42:33 | units.unit | Добавлен наблюдатель для юнита (id: 0)
+19:42:33 | units.unit | Оповещение наблюдателей юнитом (id: 0)
+19:42:33 | units.unit | Оповещение наблюдателей юнитом (id: 0)
+19:42:33 | terrains.terrain_proxy | is_passable для light_archer -> True
+19:42:33 | units.unit_type_info | Получен UnitTypeInfo для archer
+19:42:33 | units.unit | Добавлен наблюдатель для юнита (id: 1)
+19:42:33 | base | Создан light_archer на клетке (3, 1)
+19:42:33 | units.unit | Добавлен наблюдатель для юнита (id: 1)
+19:42:33 | units.unit | Оповещение наблюдателей юнитом (id: 1)
+19:42:33 | units.unit | Оповещение наблюдателей юнитом (id: 1)
+19:42:33 | map.terrain_map | Карта отрисована
+19:42:34 | terrains.terrain_proxy | is_passable для swordsman -> True
+19:42:34 | terrains.terrain_proxy | speed_modifier для infantry -> 1.000000
+19:42:34 | game_controller | Юнит (id: 0) переместился с (1, 3) на (2, 4)
+19:42:34 | terrains.terrain_proxy | is_passable для light_archer -> True
+19:42:34 | terrains.terrain_proxy | speed_modifier для archer -> 1.000000
+19:42:34 | game_controller | Юнит (id: 1) переместился с (3, 1) на (3, 2)
+19:42:34 | map.terrain_map | Карта отрисована
+19:42:35 | map.cell | Установлен A на клетку (3, 3)
+19:42:35 | map.cell | Установлен T на клетку (4, 2)
+19:42:35 | map.terrain_map | Карта отрисована
+19:42:36 | terrains.terrain_proxy | is_passable для swordsman -> True
+19:42:36 | terrains.terrain_proxy | speed_modifier для infantry -> 1.000000
+19:42:36 | game_controller | Юнит (id: 0) использовал A
+19:42:36 | game_controller | Юнит (id: 0) переместился с (2, 4) на (3, 3)
+19:42:36 | terrains.terrain_proxy | is_passable для light_archer -> True
+19:42:36 | terrains.terrain_proxy | speed_modifier для archer -> 1.000000
+19:42:36 | units.unit | Оповещение наблюдателей юнитом (id: 1)
+19:42:36 | base | Юнит (id: 1) получил 5 урона
+19:42:36 | units.unit | Оповещение наблюдателей юнитом (id: 1)
+19:42:36 | game_controller | Юнит (id: 1) использовал T
+19:42:36 | game_controller | Юнит (id: 1) переместился с (3, 2) на (4, 2)
+19:42:36 | map.terrain_map | Карта отрисована
+19:42:37 | units.unit | Оповещение наблюдателей юнитом (id: 0)
+19:42:37 | units.unit | Удален наблюдатель для юнита (id: 0)
+19:42:37 | base | База удалила юнита (id: 0)
+19:42:37 | base | Юнит (id: 0) погиб (урон: 200)
+19:42:37 | units.unit | Оповещение наблюдателей юнитом (id: 0)
+19:42:37 | map.terrain_map | Карта отрисована
+19:42:38 | base | База получила смертельный урон: 500
+19:42:38 | base | Оповещение наблюдателей базой
+19:42:38 | units.unit | Удален наблюдатель для юнита (id: 1)
+19:42:38 | base | Удален наблюдатель для базы
+19:42:38 | base | База удалена
+19:42:38 | map.terrain_map | Карта отрисована
+19:42:52 | __main__ | Запуск...
+19:42:52 | game_controller | Карта инициализирована
+19:42:52 | base | Добавлен наблюдатель для базы
+19:42:52 | base | Оповещение наблюдателей базой
+19:42:52 | game_controller | База на клетке (1, 1) создана
+19:42:52 | map.terrain_map | Карта отрисована
+19:42:53 | terrains.terrain_proxy | is_passable для swordsman -> True
+19:42:53 | units.unit_type_info | Получен UnitTypeInfo для infantry
+19:42:53 | units.unit | Добавлен наблюдатель для юнита (id: 0)
+19:42:53 | base | Создан swordsman на клетке (1, 3)
+19:42:53 | units.unit | Добавлен наблюдатель для юнита (id: 0)
+19:42:53 | units.unit | Оповещение наблюдателей юнитом (id: 0)
+19:42:53 | units.unit | Оповещение наблюдателей юнитом (id: 0)
+19:42:53 | terrains.terrain_proxy | is_passable для light_archer -> True
+19:42:53 | units.unit_type_info | Получен UnitTypeInfo для archer
+19:42:53 | units.unit | Добавлен наблюдатель для юнита (id: 1)
+19:42:53 | base | Создан light_archer на клетке (3, 1)
+19:42:53 | units.unit | Добавлен наблюдатель для юнита (id: 1)
+19:42:53 | units.unit | Оповещение наблюдателей юнитом (id: 1)
+19:42:53 | units.unit | Оповещение наблюдателей юнитом (id: 1)
+19:42:53 | map.terrain_map | Карта отрисована
+19:42:54 | terrains.terrain_proxy | is_passable для swordsman -> True
+19:42:54 | terrains.terrain_proxy | speed_modifier для infantry -> 1.000000
+19:42:54 | game_controller | Юнит (id: 0) переместился с (1, 3) на (2, 4)
+19:42:54 | terrains.terrain_proxy | is_passable для light_archer -> True
+19:42:54 | terrains.terrain_proxy | speed_modifier для archer -> 1.000000
+19:42:54 | game_controller | Юнит (id: 1) переместился с (3, 1) на (3, 2)
+19:42:54 | map.terrain_map | Карта отрисована
+19:42:55 | map.cell | Установлен A на клетку (3, 3)
+19:42:55 | map.cell | Установлен T на клетку (4, 2)
+19:42:55 | map.terrain_map | Карта отрисована
+19:42:56 | terrains.terrain_proxy | is_passable для swordsman -> True
+19:42:56 | terrains.terrain_proxy | speed_modifier для infantry -> 1.000000
+19:42:56 | game_controller | Юнит (id: 0) использовал A
+19:42:56 | game_controller | Юнит (id: 0) переместился с (2, 4) на (3, 3)
+19:42:56 | terrains.terrain_proxy | is_passable для light_archer -> True
+19:42:56 | terrains.terrain_proxy | speed_modifier для archer -> 1.000000
+19:42:56 | units.unit | Оповещение наблюдателей юнитом (id: 1)
+19:42:56 | base | Юнит (id: 1) получил 5 урона
+19:42:56 | units.unit | Оповещение наблюдателей юнитом (id: 1)
+19:42:56 | game_controller | Юнит (id: 1) использовал T
+19:42:56 | game_controller | Юнит (id: 1) переместился с (3, 2) на (4, 2)
+19:42:56 | map.terrain_map | Карта отрисована
+19:42:57 | units.unit | Оповещение наблюдателей юнитом (id: 0)
+19:42:57 | units.unit | Удален наблюдатель для юнита (id: 0)
+19:42:57 | base | База удалила юнита (id: 0)
+19:42:57 | base | Юнит (id: 0) погиб (урон: 200)
+19:42:57 | units.unit | Оповещение наблюдателей юнитом (id: 0)
+19:42:57 | map.terrain_map | Карта отрисована
+19:42:58 | base | База получила смертельный урон: 500
+19:42:58 | base | Оповещение наблюдателей базой
+19:42:58 | units.unit | Удален наблюдатель для юнита (id: 1)
+19:42:58 | base | Удален наблюдатель для базы
+19:42:58 | base | База удалена
+19:42:58 | map.terrain_map | Карта отрисована
