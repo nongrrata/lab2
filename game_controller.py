@@ -2,7 +2,7 @@ from base import Base
 from map.terrain_map import TerrainMap
 from neutral_object import Altar, Trap
 from strategies import DamageStrategy
-from unit_event import CreateEvent
+from unit_event import CreateEvent, CreateBaseEvent
 from datetime import datetime
 from math import dist
 from time import sleep
@@ -10,8 +10,8 @@ import logging
 
 class GameController:
     def __init__(self):
-        self._base: Base
-        self._terrain_map: TerrainMap
+        self._base: Base | None = None
+        self._terrain_map: TerrainMap | None = None
         self._logger = logging.getLogger(__name__)
 
     def setup_map(self, width: int, height: int, max_units: int):
@@ -20,7 +20,10 @@ class GameController:
 
     def setup_base(self, health: int, max_units: int, def_lvl: int, pos: tuple[int, int]):
         self._base = Base(health, max_units, def_lvl, 0, pos)
-        self._terrain_map.get_cell(pos).place_base(self._base)
+        if self._terrain_map is None:
+            raise RuntimeError("Попытка создать базу раньше карты")
+        self._base.subscribe(self._terrain_map)
+        self._base.notify(CreateBaseEvent(self._base, pos, datetime.now().timestamp()))
         self._logger.debug("База на клетке (%d, %d) создана", pos[0], pos[1])
 
     def spawn_unit(self, unit_type: str, pos: tuple[int, int]):
@@ -32,8 +35,10 @@ class GameController:
             self._logger.error("Ошибка при спавне. %s не может пройти через ландшафт", unit_type)
             raise RuntimeError(f"{unit_type} не может пройти через {cell.terrain}")
         unit = self._base.create_unit(unit_type, pos)
+        if unit is None:
+            raise RuntimeError("База не создала юнита")
         unit.subscribe(self._terrain_map)
-        unit.notify(CreateEvent(unit.id, self._base.position, datetime.now().timestamp()))
+        unit.notify(CreateEvent(unit, self._base.position, datetime.now().timestamp()))
         self.interact(unit.id)
 
     def move_unit(self, unit_id: int, target_pos: tuple[int, int]):
@@ -93,10 +98,20 @@ class GameController:
     def _scenario_destroy_unit_with_notification(self):
         self._base.get_unit(0).take_damage(200)
         self._terrain_map.render()
+        sleep(1)
+
+    def _scenario_destroy_base(self):
+        self._base.take_damage(500)
+        self._terrain_map.render()
 
     def run(self):
-        self.setup_map(12, 17, 35)
-        self._scenario_create_base_and_units()
-        self._scenario_moving_units()
-        self._scenario_with_neutral_obj()
-        self._scenario_destroy_unit_with_notification()
+        try:
+            self.setup_map(12, 17, 35)
+            self._scenario_create_base_and_units()
+            self._scenario_moving_units()
+            self._scenario_with_neutral_obj()
+            self._scenario_destroy_unit_with_notification()
+            self._scenario_destroy_base()
+        finally:
+            if self._base is not None:
+                self._base.dispose()

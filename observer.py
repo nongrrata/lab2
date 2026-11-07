@@ -1,9 +1,9 @@
 from abc import ABC, abstractmethod
-from unit_event import UnitEvent
+from unit_event import Event
 
 class Observer(ABC):
     @abstractmethod
-    def on_unit_event(self, event: "UnitEvent"):
+    def on_event(self, event: "Event"):
         pass
 
 class Observable(ABC):
@@ -16,5 +16,5 @@ class Observable(ABC):
         pass
 
     @abstractmethod
-    def notify(self, event: "UnitEvent"):
+    def notify(self, event: "Event"):
         pass

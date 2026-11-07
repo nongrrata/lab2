@@ -4,7 +4,7 @@ from terrains.terrain_proxy import TerrainProxy
 from neutral_object import NeutralObject
 from neutral_obj_factories import RandomNeutralObjFactory
 from observer import Observer
-from unit_event import UnitEvent, EventType
+from unit_event import Event, EventType
 import logging
 import sys
 
@@ -47,12 +47,15 @@ class TerrainMap(Observer):
         ]
         self._logger = logging.getLogger(__name__)
             
-    def on_unit_event(self, event: UnitEvent):
+    def on_event(self, event: Event):
         if event.type == EventType.DESTROYED:
             self.get_cell(event.position).remove_unit()
         elif event.type == EventType.CREATED:
-            unit = self.get_cell(event.position).base.get_unit(event.unit_id)
-            self.place_unit_at(unit, unit.position)
+            self.place_unit_at(event.unit, event.unit.position)
+        elif event.type == EventType.BASE_CREATED:
+            self.get_cell(event.position).place_base(event.base)
+        elif event.type == EventType.BASE_DESTROYED:
+            self.get_cell(event.position).remove_base()
 
     def _in_bounds(self, pos) -> bool:
         x, y = pos

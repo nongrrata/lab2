@@ -37,9 +37,10 @@ class Unit(Observable):
             self._observers.remove(observer)
 
     def notify(self, event: UnitEvent):
-        for observer in self._observers:
-            self._logger.debug("Оповещение наблюдателей юнитом (id: %d)", self.id)
-            observer.on_unit_event(event)
+        for observer in list(self._observers):
+            if observer in self._observers:
+                self._logger.debug("Оповещение наблюдателей юнитом (id: %d)", self.id)
+                observer.on_event(event)
 
     @property
     def health(self): return self._current_health

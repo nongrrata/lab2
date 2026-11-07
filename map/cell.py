@@ -56,3 +56,9 @@ class Cell:
             self._logger.error("Ошибка при размещении базы (клетка занята)")
             raise RuntimeError("Клетка занята")
         self._base = base
+
+    def remove_base(self):
+        if self._base is None:
+            self._logger.error("Ошибка при удалении базы - база отсутствует")
+            raise RuntimeError("База отсутствует")
+        self._base = None
