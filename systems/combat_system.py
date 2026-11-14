@@ -1,0 +1,2 @@
+class CombatSystem:
+    pass

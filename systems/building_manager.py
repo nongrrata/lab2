@@ -1,0 +1,2 @@
+class BuildingManager:
+    pass

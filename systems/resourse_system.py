@@ -1,0 +1,2 @@
+class ResourseSystem:
+    pass
